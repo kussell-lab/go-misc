@@ -15,7 +15,7 @@ import (
 
 func main() {
 	var pileFile = kingpin.Flag("pileup_file", "pileup file (default reading from stdin).").Default("").String()
-	var baseQual = kingpin.Flag("base_qual", "base quality").Default("50").Int8()
+	var baseQual = kingpin.Flag("base_qual", "base quality").Default("30").Int8()
 	var outFile = kingpin.Flag("out_file", "output sequence file in FASTA format (default writing to stdout).").Default("").String()
 	var fnaFile = kingpin.Flag("fna_file", "reference sequences file").Required().String()
 	kingpin.Parse()
